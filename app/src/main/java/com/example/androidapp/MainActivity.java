@@ -73,8 +73,6 @@ public class MainActivity extends AppCompatActivity {
 
         //imgView = findViewById(R.id.imageView);
         //btnOpen = (ImageButton) findViewById(R.id.btnOpen);
-
-        //btnOpen.setOnClickListener(this::takePicture);
 //
 //        //pedir permissão pra camera
 //        if(ContextCompat.checkSelfPermission(MainActivity.this, Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED){

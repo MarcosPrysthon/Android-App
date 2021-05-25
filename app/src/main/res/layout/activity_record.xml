@@ -6,6 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:layout_gravity="center"
     tools:context=".RecordActivity">
 
     <!--    <ImageButton-->
@@ -18,12 +19,20 @@
     <!--        tools:context=".MainActivity"-->
     <!--        app:srcCompat="@android:drawable/ic_menu_camera" />-->
 
-    <Button
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/imgView"/>
+
+    <TextView
         android:id="@+id/audio"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="ATIVIDADE 2"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
         android:layout_gravity="center"
-        android:layout_marginTop="100dp"
-        />
+        android:gravity="center"
+        android:text="ATIVIDADE 2"
+        android:layout_marginBottom="20dp"/>
+
+
 </LinearLayout>
