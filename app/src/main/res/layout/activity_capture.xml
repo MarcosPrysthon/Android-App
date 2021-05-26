@@ -23,8 +23,16 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="50dp"
-        android:text="tirar foto"
+        android:text="câmera traseira"
         android:id="@+id/btnCam"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:text="câmera frontal"
+        android:id="@+id/btnFrontCam"/>
 
     <ImageView
         android:layout_width="match_parent"

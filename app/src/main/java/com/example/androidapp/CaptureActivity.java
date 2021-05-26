@@ -27,6 +27,7 @@ public class CaptureActivity extends AppCompatActivity {
     static final int REQUEST_IMAGE_CAPTURE = 1;
     private ImageView imgview;
     private Button btnCam;
+    private Button btnFrontCam;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +36,7 @@ public class CaptureActivity extends AppCompatActivity {
 
         imgview = findViewById(R.id.imgView);
         btnCam = (Button) findViewById(R.id.btnCam);
+        btnFrontCam = (Button) findViewById(R.id.btnFrontCam);
 
         //pedir permissão pra camera
         if(ContextCompat.checkSelfPermission(CaptureActivity.this, Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED){
@@ -42,11 +44,23 @@ public class CaptureActivity extends AppCompatActivity {
             ActivityCompat.requestPermissions(CaptureActivity.this, permissions, REQUEST_IMAGE_CAPTURE);
         }
 
-        //abrir camera
+        // abrir camera traseira
         btnCam.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+                startActivityForResult(intent, REQUEST_IMAGE_CAPTURE);
+            }
+        });
+
+        // abrir camera frontal
+        btnFrontCam.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+                intent.putExtra("android.intent.extras.CAMERA_FACING", android.hardware.Camera.CameraInfo.CAMERA_FACING_FRONT);
+                intent.putExtra("android.intent.extras.LENS_FACING_FRONT", 1);
+                intent.putExtra("android.intent.extra.USE_FRONT_CAMERA", true);
                 startActivityForResult(intent, REQUEST_IMAGE_CAPTURE);
             }
         });
