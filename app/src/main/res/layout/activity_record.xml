@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -9,30 +9,36 @@
     android:layout_gravity="center"
     tools:context=".RecordActivity">
 
-    <!--    <ImageButton-->
-    <!--        android:id="@+id/btnOpen"-->
-    <!--        android:layout_width="wrap_content"-->
-    <!--        android:layout_height="wrap_content"-->
-    <!--        android:layout_marginTop="40dp"-->
-    <!--        android:layout_marginLeft="15dp"-->
-    <!--        android:onClick="takePicture"-->
-    <!--        tools:context=".MainActivity"-->
-    <!--        app:srcCompat="@android:drawable/ic_menu_camera" />-->
+    <Button
+        android:id="@+id/btnRecord"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="50dp"
+        android:text="gravar" />
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:id="@+id/imgView"/>
+    <Button
+        android:id="@+id/btnStop"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="100dp"
+        android:text="pausar" />
+
+    <Button
+        android:id="@+id/btnPlay"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="150dp"
+        android:text="tocar" />
 
     <TextView
-        android:id="@+id/audio"
-        android:layout_width="150dp"
-        android:layout_height="50dp"
-        android:layout_gravity="center"
-        android:gravity="center"
-        android:text="ATIVIDADE 2"
-        android:layout_marginBottom="20dp"/>
+        android:id="@+id/textView"
+        android:layout_width="359dp"
+        android:layout_height="251dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="172dp" />
 
-
-</LinearLayout>
+</RelativeLayout>
