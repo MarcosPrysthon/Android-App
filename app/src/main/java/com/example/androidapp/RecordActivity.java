@@ -43,8 +43,6 @@ public class RecordActivity extends AppCompatActivity {
         btnPlay = (Button) findViewById(R.id.btnPlay);
         btnStop = (Button) findViewById(R.id.btnStop);
 
-
-
         // ja tem permissao pra utilizar
         btnRecord.setOnClickListener(new View.OnClickListener() {
             @Override

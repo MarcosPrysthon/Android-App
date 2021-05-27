@@ -8,42 +8,40 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-<!--    <ImageButton-->
-<!--        android:id="@+id/btnOpen"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_marginTop="40dp"-->
-<!--        android:layout_marginLeft="15dp"-->
-<!--        android:onClick="takePicture"-->
-<!--        tools:context=".MainActivity"-->
-<!--        app:srcCompat="@android:drawable/ic_menu_camera" />-->
+    <include layout="@layout/header_layout" />
+
+    <ImageButton
+        android:id="@+id/btnOpen"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        app:srcCompat="@android:drawable/ic_menu_camera"
+        tools:context=".MainActivity" />
 
     <Button
         android:id="@+id/camera"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="tirar foto"
         android:layout_gravity="center"
-        android:layout_marginTop="100dp"
-        />
+        android:text="tirar foto" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        app:srcCompat="@drawable/ic_baseline_keyboard_voice_24"
+        tools:context=".MainActivity" />
 
     <Button
         android:id="@+id/audio"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="gravar audio"
         android:layout_gravity="center"
-        android:layout_marginTop="100dp"
-        />
 
-    <Button
-        android:id="@+id/config"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="configurações"
-        android:layout_gravity="center"
-        android:layout_marginTop="100dp"
-        />
+        android:text="gravar audio" />
 
 
 </LinearLayout>

@@ -8,6 +8,8 @@
     android:orientation="vertical"
     tools:context=".CaptureActivity">
 
+    <include layout="@layout/header_layout"/>
+
     <!--    <ImageButton-->
     <!--        android:id="@+id/btnOpen"-->
     <!--        android:layout_width="wrap_content"-->
